@@ -11,7 +11,7 @@ public class CutCollider : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Robot")
+        if(other.tag == "Player")
         {
             cutScene.SetActive(true);
         }
