@@ -13,7 +13,7 @@ public class EToEnter : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        text.SetActive(true);
+        if(other.tag == "Player") text.SetActive(true);
     }
     private void OnTriggerStay(Collider other)
     {

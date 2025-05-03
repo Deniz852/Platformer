@@ -18,7 +18,7 @@ public class Missile : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Robot")
+        if (other.tag == "Robot" || other.tag == "Player")
         {
 
         }

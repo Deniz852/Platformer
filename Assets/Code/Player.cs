@@ -29,6 +29,10 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if(health > maxHealth)
+        {
+            health = maxHealth;
+        }
         if (Input.GetMouseButtonDown(0))
         {
             Instantiate(fireballPrefab, attackPoint.position, attackPoint.rotation);
