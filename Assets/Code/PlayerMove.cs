@@ -15,10 +15,6 @@ public class PlayerMove : MonoBehaviour
     {
         rb = this.GetComponent<Rigidbody>();
     }
-    void Start()
-    {
-        Cursor.visible = false;
-    }
 
     void FixedUpdate()
     {
